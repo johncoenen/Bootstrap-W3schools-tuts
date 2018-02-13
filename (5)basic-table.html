@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Simple Table Structure</h2>
+    <p>Using the <mark>.table class</mark> will add basic styling to a table. This styling includes light padding and horizontal dividers on the table structure.</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Homer</td>
+          <td>Simpson</td>
+          <td>HJSimpson@coldmail.com</td>
+        </tr>
+        <tr>
+          <td>Barney</td>
+          <td>Fife</td>
+          <td>FifeLife@coldmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2>Bordered Table</h2>
+    <p>The <mark>.table-bordered</mark>class adds borders to a table.</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hal</td>
+          <td>Jordan</td>
+          <td>glantern@coldmail.com</td>
+        </tr>  
+        <tr>
+          <td>John</td>
+          <td>Stewart</td>
+          <td>glcorps@coldmail.com</td>
+        </tr>
+        <tr>
+          <td>Kyle</td>
+          <td>Rayner</td>
+          <td>whitelantern@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Hover Rows</h2>
+    <p>The <mark>.table-hover</mark> class enables a hover state on table rows:</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>  
+        <tbody>
+          <tr>
+            <td>Jim</td>
+            <td>James</td>
+            <td>jjames@coldmail.com</td>
+          </tr>          
+          <tr>
+            <td>John</td>
+            <td>Juan</td>
+            <td>jjuan@coldmail.com</td>
+          </tr>          
+          <tr>
+            <td>Hot</td>
+            <td>Scott</td>
+            <td>hscott@coldmail.com</td>
+          </tr>
+        </tbody>        
+    </table>
+
+    <h2>Condensed Table</h2>
+    <p>The <mark>.table-condensed</mark> class compacts the table by halving the cell padding.</p>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>  
+            <tbody>
+              <tr>
+                <td>Jim</td>
+                <td>James</td>
+                <td>jjames@coldmail.com</td>
+              </tr>          
+              <tr>
+                <td>John</td>
+                <td>Juan</td>
+                <td>jjuan@coldmail.com</td>
+              </tr>          
+              <tr>
+                <td>Hot</td>
+                <td>Scott</td>
+                <td>hscott@coldmail.com</td>
+              </tr>
+            </tbody>
+    </table>
+
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color table rows or table cells. These are the classes: <mark>.active</mark>, <mark>.success</mark>, <mark>.info</mark>, <mark>.warning</mark>, and <mark>.danger</mark></p>
+    <table class="table">  
+    <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr class="success">
+            <td>John</td>
+            <td>Smith</td>
+            <td>jsmith@coldmail.com</td>
+          </tr>
+          <tr class="danger">
+              <td>Jane</td>
+              <td>Smith</td>
+              <td>janesmith@coldmail.com</td>
+            </tr>
+          <tr class="info">
+              <td>Gerry</td>
+              <td>Gert</td>
+              <td>ggert@coldmail.com</td>
+          </tr>
+          <tr class="warning">
+              <td>Jerry</td>
+              <td>Jert</td>
+              <td>jjert@coldmail.com</td>
+          </tr>
+          <tr class="active">
+              <td>Barry</td>
+              <td>Bart</td>
+              <td>bbart@coldmail.com</td>
+          </tr>            
+        </tbody>      
+    </table>
+  
+  <h2>Responsive Table</h2>
+  <p>The <mark>.table-responsive</mark> class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>
+  <div class="table-responsive">
+    <table class="table">
+    <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>          
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Art</td>
+            <td>Orpin</td>
+            <td>75</td>
+            <td>Cleveland</td>
+            <td>USA</td>
+          </tr>
+          <tr>              
+            <td>2</td>
+            <td>Larry</td>
+            <td>Durkin</td>
+            <td>37</td>
+            <td>Madison</td>
+            <td>USA</td>
+          </tr>
+          <tr>              
+            <td>3</td>
+            <td>Dan</td>
+            <td>Desmondons</td>
+            <td>2</td>
+            <td>Des Planes</td>
+            <td>USA</td>
+          </tr>            
+        </tbody>      
+    </table>
+  </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding: 10px;
+    }
+    mark {
+      background-color: #981b1e;
+      color:#ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bootstrap 3 - Button Classes</h2>
+    <h3>Example 1</h3>
+    <p>The following examples show the different styles of buttons:</p>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Information</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>    
+    <h3>Example 2</h3>  
+    <p>Button classes can be used on <mark>&lt;a&gt;</mark>, <mark>&lt;button&gt;</mark>, or <mark>&lt;input&gt;</mark> element:</p>
+    <a href="#" class="btn btn-info" role="button">Link Button</a>
+    <button type="button" class="btn btn-info">Button</button>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
+    <h2>Button Sizes</h2>
+    <p>Bootstrap uses four classes to define button sizes:</p>
+      <ul>
+        <li><code>.btn-lg</code></li>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <li><code>.btn-md</code></li>
+        <button type="button" class="btn btn-primary btn-md">Medium</button>        
+        <li><code>.btn-sm</code></li>
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+        <li><code>.btn-xs</code></li>
+        <button type="button" class="btn btn-primary btn-xs">Large</button>        
+      </ul> 
+    <h2>Block Level Buttons</h2>
+    <p>Block level buttons span the entire width of the parent element</p>
+    <p>Use the <code>.btn-block</code> class tp create a block level button:</p>
+    <button type="button" class="btn btn-primary btn-block">First Block Button</button>       <button type="button" class="btn btn-primary btn-block">Second Block Button</button>      <h2>Active/Disabled Buttons</h2> 
+    <p>Buttons can appear pressed(ACTIVE) or unclickable(DISABLED)</p>
+    <p>A button that looks like it has been pressed uses the <code>.active</code>class.</p>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <p>A button that looks unclickable uses the <code>.disabled</code> class.</p>
+    <button type="button" class="btn btn-primary disabled">Disabled Primary</button> 
+    <h4>Button Reference</h4>
+    <p>A complete list of all Bootstrap 3 button classes</p>
+    <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp">W3Schools Bootstrap 3 Buttons Reference Guide</a>  
+  </div>
+    
+</body>
+</html>
