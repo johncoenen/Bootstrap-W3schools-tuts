@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap List Groups</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>List Groups</h1>
+    <p>An unordered list with list items is a basic example of a list group.</p>
+    <p>The &lt;ul&gt; element is paired with the <code>.list-group</code> class to create the unordered list group. Then the &lt;li&gt; elements are paired with the <code>.list-group-item</code> class to create the list items.</p>
+    <h2>Basic List Group</h2>
+    <ul class="list-group">
+      <li class="list-group-item">First Item</li>
+      <li class="list-group-item">Second Item</li>
+      <li class="list-group-item">Third Item</li>
+    </ul>
+    <h2>List Group With Badges</h2>
+    <p>Badges can be added to list groups. These will be displayed to the right by default.</p>
+    <ul class="list-group">
+      <li class="list-group-item">Files<span class="badge">1113</span></li>
+      <li class="list-group-item">New<span class="badge">322</span></li>
+      <li class="list-group-item">Deleted<span class="badge">21</span></li>
+    </ul>
+    <h2>Linked Items in a List Group</h2>
+    <p>To create a list group with linked items, replace &lt;ul&gt; with a &lt;div&gt; element. Then use the &lt;a&gt; tag in place of the &lt;li&gt; tag.</p>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Check It Out!</a>
+      <a href="#" class="list-group-item">Something For You</a>
+      <a href="#" class="list-group-item">Can You Dig It?</a>
+    </div>
+    <h2>Active State</h2>
+    <p>Use the <code>.active</code> class to <mark>highlight</mark> the current item.</p>
+    <div class="list-group">
+      <a href="" class="list-group-item">Keep It Real</a>
+      <a href="" class="list-group-item active">Stay 100%</a>
+      <a href="" class="list-group-item">Should Try Keepin' It Right</a>
+    </div>
+    <h2>Disabled Item</h2>
+    <p>Use the <code>.disabled</code> class to <mark>disable</mark> an item.</p>
+    <div class="list-group">
+      <a href="" class="list-group-item">Once</a>
+      <a href="" class="list-group-item disable">Upon</a>
+      <a href="" class="list-group-item">A Time</a>
+    </div>
+    <h2>Contextual Classes</h2>
+    <p>These are used to color list items.</p>
+    <p>We use these classes for coloring items: <code>.list-group-item-success</code>, <code>.list-group-item-info</code>, <code>list-group-item-warning</code>, and <code>list-group-item-danger</code></p>    
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">One</li>
+      <li class="list-group-item list-group-item-info">Two</li>
+      <li class="list-group-item list-group-item-warning">Three</li>
+      <li class="list-group-item list-group-item-danger">Four</li>
+    </ul>
+    <h2>Custom Content</h2>
+    <p>Almost any HTML can be added inside a group list item.</p>
+    <p>The classes <code>.list-group-item-heading</code> and <code>.list-group-item-text</code> can be used like so:</p>
+    <h4>Example</h4>
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h5 class="list-group-item-heading">This Here Is The First <code>.list-group</code> Item Heading</h5>
+        <p class="list-group-item-text">Here is some group item text based content.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h5 class="list-group-item-heading">Wee Oww I'm the Second <code>.list-group</code> Item Heading</h5>
+        <p class="list-group-item-text">... more text content</p>
+      </a>
+      <a href="#" class="list-group-item">
+          <h5 class="list-group-item-heading">The Last <code>.list-group</code> Item Heading</h5>
+          <p class="list-group-item-text">... even more text content</p>
+        </a>
+    </div>
+</body>
+</html>

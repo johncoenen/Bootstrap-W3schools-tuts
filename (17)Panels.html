@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Panels</h1>
+    <p>The <code>.panel</code> class is used to create a basic panel.</p>
+    <p>The content inside a panel uses the <code>.panel-body</code> class.</p>
+    <h2>Basic Panel</h2>
+    <h4>Example:</h3>
+    <div class="panel panel-default">
+      <div class="panel-body">        
+        <p>
+          <mark>
+            NOTE: The <code>.panel-default</code> class adds basic styles to the panel.
+          </mark>
+        </p>
+      </div>
+    </div>  
+      <h2>Panel Heading</h2>
+      <p>The <code>.panel-heading</code> class is used to add a heading to a panel.</p>
+      <h4>Example:</h4>
+      <div class="panel panel-default">
+        <div class="panel-heading">This Is The Panel Heading</div>
+        <div class="panel-body">This is the content of the panel. "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</div>
+      </div>
+    <h2>Panel Footer</h2>
+    <p>The <code>.panel-footer</code> class adds a footer to a panel.</p>
+    <h4>Example:</h4>
+    <div class="panel panel-default">
+      <div class="panel-body">Some content, Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint</div>
+      <div class="panel-footer"><mark>FOOTER CONTENT</mark></div>
+    </div>
+    <h2>Panel Group</h2>
+    <p>If you want to combine many panels together, wrap a &lt;div&gt; with the <code>.panel-group</code> class.</p>
+    <mark>NOTE: The <code>.panel-group</code> class clears the bottom margin of each panel.</mark>
+    <h4>Example:</h4>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-body">Content, Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">More Content, Content, Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+    </div>
+    <h2>Contextual Classes On Panels</h2>
+    <p>Useful colors can be associated with panels by using the contextual classes: 
+      <ul>
+        <li><code>.panel-default</code></li>
+        <li><code>.panel-primary</code></li>
+        <li><code>.panel-success</code></li>
+        <li><code>.panel-info</code></li>
+        <li><code>.panel-warning</code></li>
+        <li><code>.panel-danger</code></li>
+      </ul>
+    </p>
+    <h4>Example:</h4>
+    <div class="container">
+    <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">Default</div>
+          <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Primary</div>
+          <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">Success</div>
+            <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+          </div>
+          <div class="panel panel-info">
+              <div class="panel-heading">Info</div>
+            <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+          </div>
+          <div class="panel panel-warning">
+              <div class="panel-heading">Warning</div>
+              <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading">Danger</div>
+              <div class="panel-body">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
