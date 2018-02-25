@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Collapse is when you show or hide areas of content.</h1>
+    <p>We use the <code>.collapse</code> class on an element to show or hide the content.</p>
+    <p>The <code>data-toggle="collapse"</code> attribute is attached to the &lt;a&gt; or the &lt;button&gt; element to show/hide the content.</p>
+    <p>Then the <code>data-target="#id"</code> attribute connects the button to the collapsible area.</p>
+    <p class="alert alert-warning">When using &lt;a&gt; elements the <code>href</code> attribute can replace the <code>data-target</code> attribute.</p>
+    <h4>Basic Example:</h4><button data-target="#demo"
+         data-toggle="collapse">Click Here</button>
+    <div class="collapse"
+         id="demo">
+      Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce
+      ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos.
+    </div>
+    <h4>Using &lt;a&gt; href</h4><a data-toggle="collapse"
+         href="#demo1">Collapsinator</a>
+    <div class="collapse"
+         id="demo1">
+      Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce
+      ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos.
+    </div>
+    <h2>Collapsible Panel</h2>
+    <h4>Example:</h4>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h5 class="panel-title"><a data-toggle="collapse"
+             href="#collapse1">Collapse This Panel</a></h5>
+        </div>
+        <div class="panel-collapse collapse"
+             id="collapse1">
+          <div class="panel-body">
+            Panel Body
+          </div>
+          <div class="panel-footer">
+            Panel Footer
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Collapsible List Group</h2>
+    <h4>Example:</h4>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <h4 class="panel-title"><a data-toggle="collapse"
+           href="#collapse2">Collapse the list group:</a></h4>
+      </div>
+      <div class="panel-collapse collapse"
+           id="collapse2">
+        <ul class="list-group">
+          <li class="list-group-item">Hotdog</li>
+          <li class="list-group-item">Hamburger</li>
+          <li class="list-group-item">Pizza Pie</li>
+        </ul>
+        <div class="panel-footer">
+          Footer
+        </div>
+      </div>
+    </div>
+    <h2>Accordion</h2>
+    <p>The <code>data-parent</code> attribute is used to make sure that all elements under a specific parent element will collapse when one of the collapsible items is shown.</p>
+  </div>
+  <h4>Example:</h4>
+  <div class="panel-group"
+       id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"><a data-parent="#accordion"
+           data-toggle="collapse"
+           href="#collapse3">FIRST GROUP</a></h4>
+      </div>
+      <div class="panel-collapse collapse in"
+           id="collapse3">
+        <div class="panel-body">
+          Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+          dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices
+          enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a data-parent="#accordion"
+             data-toggle="collapse"
+             href="#collapse4">SECOND GROUP</a></h4>
+        </div>
+        <div class="panel-collapse collapse"
+             id="collapse4">
+          <div class="panel-body">
+            Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+            dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices
+            enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a data-parent="#accordion"
+               data-toggle="collapse"
+               href="#collapse5">THIRD GROUP</a></h4>
+          </div>
+          <div class="panel-collapse collapse"
+               id="collapse5">
+            <div class="panel-body">
+              Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+              dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices
+              enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

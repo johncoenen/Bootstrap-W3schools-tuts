@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Tabs and Pills</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Tabs &amp; Pills</h1>
+    <h2>Menus</h2>
+    <p>To create a horizontal menu we first make an &lt;ul&gt;.</p>
+    <p>Then we use the <code>list-inline</code> class on the unordered list.</p>
+    <h4>Horizontal Menu</h4>
+    <ul class="list-inline">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+    </ul>
+    <p>We can also style a horizontal menu with tabs and pills.</p>
+    <p>This is similar to the example above, but in this case we use the <code>nav nav-tabs</code> classes on the &lt;ul&gt; element.</p>
+    <p>The &lt;li&gt; uses the <code>active</code> class to show which page we are on.</p>
+    <h4>Example:</h4>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+    </ul>
+    <h2>Tabs with Dropdown</h2>
+    <p>Tabs can also use dropdown menus.</p>
+    <p>In this example we will add a dropdown menu to the Products tab.</p>
+    <h4>Example:</h4>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+            data-toggle="dropdown"
+            href="#">Products</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Hotdog Salad</a>
+          </li>
+          <li>
+            <a href="#">Pizza Salad</a>
+          </li>
+          <li>
+            <a href="#">Cheeseburger Salad</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <h2>Pills</h2>
+    <p>Pills are similar to tabs, but styled differently. By default they are bordered on all sides, have white font color, and a blue background color.</p>
+    <p>Pills use the <code>nav nav-pills</code> classes and also use the <code>active</code> class to mark the current page.</p>
+    <h4>Example:</h4>
+    <ul class="nav nav-pills">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li class="active">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <h2>Vertical Pills</h2>
+    <p>We can display Pills vertically using the <code>.nav-stacked</code> class.</p>
+    <h4>Example</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li class="active">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <h2>Vertical Pills Inside a Row</h2>
+    <p>For this example the vertical pills menu will be in the last column of the grid.</p>
+    <p>When displayed on a large screen the menu will display on the right side of the browser.</p>
+    <p>On smaller screens the content will be adjusted to be a single-column.</p>
+    <h4>Example:</h4>
+    <div class="col-md-3">
+      Content
+    </div>
+    <div class="col-md-3">
+      More Content
+    </div>
+    <div class="col-md-3">
+      S'more Content
+    </div>
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active">
+          <a href="#">Pills</a>
+        </li>
+        <li>
+          <a href="#">Red</a>
+        </li>
+        <li>
+          <a href="#">Orange</a>
+        </li>
+        <li>
+          <a href="#">Blue</a>
+        </li>
+        <li>
+          <a href="#">Green</a>
+        </li>
+      </ul>
+    </div>
+    <h2>Pills with Dropdown</h2>
+    <p>Pills can have dropdown menus too.</p>
+    <h4>Example:</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+            date-toggle="dropdown"
+            href="#">Top Menu</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Section 1-1</a>
+          </li>
+          <li>
+            <a href="#">Section 1-2</a>
+          </li>
+          <li>
+            <a href="#">Section 1-3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Middle Menu</a>
+      </li>
+      <li>
+        <a href="#">Bottom Menu</a>
+      </li>
+    </ul>
+    <h2>Centering Tabs &amp; Pills</h2>
+    <p>Us the <code>.nav-justified</code> class to center tabs and pills.</p>
+    <p><mark>Note:</mark>Screens smaller than 768px will stack the list items.</p>
+    <h3>Centered Tabs</h3><br>
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul><br>
+    <br>
+    <h3>Centered Pills</h3><br>
+    <ul class="nav nav-pills nav-justified">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <h2>Dynamic / Toggleable Tabs</h2>
+    <p>Use the attribute <code>data-toggle="tab"</code> on each link to make the tabs toggleable.</p>
+    <p>Add the <code>.tab-pane</code> class using a unique ID for each tab.</p>
+    <p>Wrap these inside a &lt;div&gt; element with the class <code>.tab-content</code>.</p>
+    <p>Add a fade in/out effect by adding the <code>.fade</code> class to <code>.tab-pane</code></p>
+    <h4>Example:</h4>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a data-toggle="tab"
+            href="#home">Home</a>
+      </li>
+      <li>
+        <a data-toggle="tab"
+            href="#menu1">Menu 1</a>
+      </li>
+      <li>
+        <a data-toggle="tab"
+            href="#menu2">Menu 2</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active"
+           id="home">
+        <h3>HOME</h3>
+        <p>Thanos is a fictional character appearing in American comic books published by Marvel Comics. Created by writer Mike Friedrich and writer-artist Jim Starlin, the character first appeared in Iron Man #55 (cover dated Feb. 1973).</p>
+      </div>
+      <div class="tab-pane fade"
+           id="menu1">
+        <h3>MENU ONE</h3>
+        <p>Thanos' first appearance was in Iron Man #55 (Feb. 1973), featuring a story by Jim Starlin that was scripted by Mike Friedrich. The storyline from that issue continued through Captain Marvel #25–33 (bi-monthly: March 1973 – Jan. 1974),
+        Marvel Feature #12 (Nov. 1973), Daredevil #107 (Jan. 1974), and Avengers #125 (July 1974). He returned in an extended storyline that spanned Strange Tales #178-181 (Feb.–Aug. 1975), Warlock #9-11 (Oct. 1975 – Jan. 1976), Marvel Team Up #55
+        (March 1977), and the 1977 Annuals for Avengers and Marvel Two-in-One (Thanos does not actually appear until the end of Warlock #9).</p>
+      </div>
+      <div class="tab-pane fade"
+           id="menu2">
+        <h3>MENU TWO</h3>
+        <p>The character was revived in Silver Surfer vol. 3, #34 (Feb. 1990) and guest-starred until issue #59 (November 1991), while simultaneously appearing in The Thanos Quest #1–2 (Sept.–Oct. 1990) and Infinity Gauntlet #1-6 (July–Dec. 1991).
+        After an appearance in Spider-Man #17 (Dec. 1991), Thanos had a recurring role in Warlock and the Infinity Watch #1-42 (Feb. 1992 – Aug. 1995).</p>
+      </div>
+    </div>
+    <h2>Dynamic / Toggleable Pills</h2>
+    <p>The same code works with pills, just change the data-toggle attribute to <code>data-toggle="pill"</code>.</p><!-- TODO add example -->
+  </div>
+</body>
+</html>

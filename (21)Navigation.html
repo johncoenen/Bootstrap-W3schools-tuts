@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Navigation Bars</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Navigation Bars</h1>
+    <p>Navigation bars will grow or shrink based on the size of the screen.</p>
+    <p>You can create a basic nav bar using: <code>&lt;nav class="navbar navbar-default"&gt;</code></p>
+    <h2>Add Nav at Top of Page</h2>
+    <h4>Example:</h4>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+             href="#">Website Name/Title</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav><br>
+    <h2>Sizing Note:</h2>
+    <div class="well">
+      <p class="bg-warning"
+         style="font-size: 22px;">These examples are for large screen formats, and are contained on a single line. Smaller screen formats will be dealt with in the final example.</p>
+    </div>
+    <h2>Inverted Nav Bar</h2>
+    <p>This is an alternative to the default navbar styling, and has a black background color.</p>
+    <h4>Example:</h4>
+    <nav class="nav navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand"
+               href="#">Shoes for Feets</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Mens</a>
+          </li>
+          <li>
+            <a href="#">Womens</a>
+          </li>
+          <li>
+            <a href="#">Kids</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h2>Nav With Dropdown</h2>
+    <p>Navigation bars can also use dropdown menus.</p>
+    <h4>Example:</h4>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand"
+               href="#">Musics</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle"
+                data-toggle="dropdown"
+                href="#">Jazz</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Bebop</a>
+              </li>
+              <li>
+                <a href="#">Swing</a>
+              </li>
+              <li>
+                <a href="#">Hard Bop</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Rock n' Roll</a>
+          </li>
+          <li>
+            <a href="#">Country</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h2>Nav Bar Right-Align</h2>
+    <p>Use the <code>.navbar-right</code> class to right-align buttons.</p>
+    <p>Often seen examples of this are "Sign Up" and "Login" buttons that are separated from the main navigation areas..</p>
+    <h4>Example:</h4>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand"
+               href="#">HelloWebisite</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-user">&nbsp;SignUp</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h2>Nav Buttons</h2>
+    <p>Use the <code>.navbar-btn</code> class inside the navbar to create a button.</p>
+    <h4>Example:</h4>
+    <nav class="navbar navbar-inverse">
+      <div class="fluid-container">
+        <div class="navbar-header">
+          <a class="navbar-brand"
+               href="#">Mish Mash</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul><button class="btn btn-danger navbar-btn">Button</button>
+      </div>
+    </nav>
+    <h2>Nav Forms</h2>
+    <p>To create a form element in the nav, add the <code>.navbar-form</code> class to a form element. Then you can add additional inputs.</p>
+    <p><mark>Using the <code>.form-group</code> class with a div container will add padding if there are more than one input.</mark></p>
+    <h4>Example:</h4>
+    <nav class="navbar navbar-default">
+      <div class="fluid-container">
+        <a class="navbar-brand"
+             href="#">Always Alvvays</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Page</a>
+        </li>
+        <li>
+          <a href="#">Page</a>
+        </li>
+      </ul>
+      <form action="/action_page.php"
+            class="navbar-form navbar-left">
+        <div class="form-group">
+          <input class="form-control"
+               placeholder="Search"
+               type="text">
+        </div><button class="btn btn-danger"
+              type="submit">Submit</button>
+      </form>
+    </nav>
+  </div>
+</body>
+</html>
