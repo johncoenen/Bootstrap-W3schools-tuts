@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Media Objects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Media Objects</h1>
+    <h2>Basic Media Object</h2>
+    <p>This example shows media objects aligned to the left of the content and aligned to the right of the content.</p>
+    <p>The &lt;div&gt; element uses the
+      <code>.media</code> class to create a container for the media object.</p>
+    <p>The
+      <code>.media-heading</code> class is used for the headings.</p>
+    <p>The text is placed inside the container using the
+      <code>media-body</code> class.</p>
+    <p>
+      <code>.media-left</code> aligns images to the left, while
+      <code>.media-right</code> aligns images to the right.</p>
+    <h4>Example:</h4>
+    <!-- Aligned Left -->
+    <div class="media">
+      <div class="media-left">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511319569/elGreco_djcvt8.jpg" class="media-object" style="width: 60px"
+          alt="el greco">
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading">El Greco</h3>
+        <p>El Greco was born in the Kingdom of Candia, which was at that time part of the Republic of Venice, and the center
+          of Post-Byzantine art. He trained and became a master within that tradition before traveling at age 26 to Venice,
+          as other Greek artists had done.[2] In 1570 he moved to Rome, where he opened a workshop and executed a series
+          of works. During his stay in Italy, El Greco enriched his style with elements of Mannerism and of the Venetian
+          Renaissance taken from a number of great artists of the time, notably Tintoretto. In 1577, he moved to Toledo,
+          Spain, where he lived and worked until his death. In Toledo, El Greco received several major commissions and produced
+          his best-known paintings.</p>
+      </div>
+    </div>
+
+    <!-- Right aligned -->
+    <div class="media">
+      <div class="media-body">
+        <h3 class="media-heading">Lucien Freud</h3>
+        <p>He was born in Berlin, the son of Jewish architect Ernst L. Freud and the grandson of Sigmund Freud. His family moved
+          to Britain in 1933 to escape the rise of Nazism. From 1942-43 he attended Goldsmiths College, London. He enlisted
+          in the Merchant Navy during the Second World War.</p>
+      </div>
+      <div class="media-right">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511314934/lucien_yciuao.jpg" class="media-object" style="width:60px;"
+          alt="lucien">
+      </div>
+    </div>
+    <h2>Top, Middle, and Bottom Alignment</h2>
+    <p>Media objects can be aligned at the top, middle, or bottom using the
+      <code>media-top</code>,
+      <code>media-middle</code>, or
+      <code>media-bottom</code> classes.</p>
+      <mark><strong>Note:</strong>You will have to resize to a smaller screen to see this effect. Or you could add more content.</mark>
+    <h4>Example:</h4>
+    <!-- Media Top -->
+    <div class="media">
+      <div class="media-left media-top">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511314934/lucien_yciuao.jpg" class="media-object" style="width:60px;"
+          alt="lucien">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media Top</h4>
+        <p>He was born in Berlin, the son of Jewish architect Ernst L. Freud and the grandson of Sigmund Freud. His family moved
+          to Britain in 1933 to escape the rise of Nazism. From 1942-43 he attended Goldsmiths College, London. He enlisted
+          in the Merchant Navy during the Second World War.</p>
+      </div>
+    </div>
+    <!-- Media Middle -->
+    <div class="media">
+      <div class="media-left media-middle">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511319569/elGreco_djcvt8.jpg" class="media-object" style="width:60px;"
+          alt="el greco">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media Middle</h4>
+        <p>El Greco was born in the Kingdom of Candia, which was at that time part of the Republic of Venice, and the center
+          of Post-Byzantine art. He trained and became a master within that tradition before traveling at age 26 to Venice...</p>
+      </div>
+    </div>
+    <!-- Media Bottom -->
+    <div class="media">
+      <div class="media-left media-bottom">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511318599/jenny_iamv9y.jpg" class="media-object" style="width:60px;"
+          alt="jenny">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media Bottom</h4>
+        <p>Captivated by the endless aesthetic and formal possibilities of the materiality of the human body, Jenny Saville
+          makes a highly sensuous and tactile impression of surface and mass in her monumental oil paintings. Subjects are
+          imbued with a sculptural yet elusive dimensionality that verges on the abstract. In recent paintings, she renews
+          her enduring figurative investigations by depicting bodies embracing and intertwined.</p>
+      </div>
+    </div>
+    <h2>Nested Media Objects</h2>
+    <p>Media objects can be nested, a media object inside a media object...</p>
+    <h4>Example 1:</h4>
+    <div class="media">
+      <div class="media-left">
+        <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511318599/jenny_iamv9y.jpg" class="media-object" style="width:60px;"
+          alt="jenny">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Jenny</h4>
+        <p>Captivated by the endless aesthetic and formal possibilities of the materiality of the human body, Jenny Saville makes...</p>
+
+        <!-- First Nested Media Object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511319569/elGreco_djcvt8.jpg" class="media-object" style="width:60px;"
+              alt="el greco">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">el Greco</h4>
+            <p>El Greco was born in the Kingdom of Candia, which was at that time part of the Republic of Venice, and the center
+              of Post-Byzantine art...</p>
+            <!-- Second Nested Media Object -->
+            <div class="media">
+              <div class="media-left">
+                <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511314934/lucien_yciuao.jpg" class="media-object" style="width:60px;"
+                  alt="lucien">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Lucien</h4>
+                <p>He was born in Berlin, the son of Jewish architect Ernst L. Freud and the grandson of Sigmund Freud...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Nesting Example 2:</h2>
+    <div class="media">
+        <div class="media-left">
+          <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511318599/jenny_iamv9y.jpg" class="media-object" style="width:60px;"
+            alt="jenny">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Jenny</h4>
+          <p>Captivated by the endless aesthetic and formal possibilities of the materiality of the human body, Jenny Saville makes...</p><br>
+  
+          <!-- First Nested Media Object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511319569/elGreco_djcvt8.jpg" class="media-object" style="width:60px;"
+                alt="el greco">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">el Greco</h4>
+              <p>El Greco was born in the Kingdom of Candia, which was at that time part of the Republic of Venice, and the center
+                of Post-Byzantine art...</p><br>
+              <!-- Second Nested Media Object -->
+              <div class="media">
+                <div class="media-left">
+                  <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511314934/lucien_yciuao.jpg" class="media-object" style="width:60px;"
+                    alt="lucien">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Lucien</h4>
+                  <p>He was born in Berlin, the son of Jewish architect Ernst L. Freud and the grandson of Sigmund Freud...</p><br>
+                </div>                                
+              </div>
+            </div>
+            <!-- Additional Nested Media Object -->
+            <div class="media">
+              <div class="media-left">
+                <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1511319217/rembrandt_eyqy5m.jpg" class="media-object" style="width:60px;" alt="Remy">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Rembrandt</h4>
+                <p>Rembrandt never went abroad, but he was considerably influenced by the work of the Italian masters and Netherlandish artists who had studied in Italy, like Pieter Lastman, the Utrecht Caravaggists, and Flemish Baroque Peter Paul Rubens. Having achieved youthful success as a portrait painter, </p><br>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Additional Nested Media Object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="http://res.cloudinary.com/dfw7rvsrn/image/upload/v1517915423/220px-Juan_Gris_-_Portrait_of_Pablo_Picasso_-_Google_Art_Project_ueeeal.jpg" class="media-object" style="width:60px;" alt="Picasso">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Pablo</h4>
+            <p>Picasso demonstrated extraordinary artistic talent in his early years, painting in a naturalistic manner through his childhood and adolescence. During the first decade of the 20th century, his style changed as he experimented with different theories, techniques, and ideas.</p><br>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

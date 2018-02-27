@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Input Sizing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Input Sizing</h1>
+    <h2>Input Sizing in Forms</h2>
+    <p>Heights are set using classes like <code>.input-lg</code> and <code>.input-sm.</code></p>
+    <p>Widths are set using grid column classes like <code>.col-lg-*</code> and <code>.col-sm-*</code>.</p>
+    <h2>Height Sizing</h2>
+    <h4>Example:</h4>
+    <form>
+      <div class="form-group">
+        <label for="inputsm">Small Input</label>
+        <input type="text" id="inputsm" class="form-control input-sm">
+      </div>
+      <div class="form-group">
+        <label for="inputdefault">Default Input</label>
+        <input type="text" class="form-control" id="inputdefault">
+      </div>
+      <div class="form-group">
+        <label for="inputlg">Large Input</label>
+        <input type="text" class="form-control input-lg" id="inputlg">
+      </div>
+    </form>
+    <h2>Horizontal Form Sizing</h2>
+    <p>Add the <code>.form-group-*</code> class to the &lt;div class="form-group"&gt; element to size labels and form controls in a Horizontal form.</p>
+  
+  <h4>Example:</h4>
+  <form class="form-horizontal">
+    <div class="form-group form-group-lg">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+    </div>
+  </form>
+  <p>Size all inputs and other elements inside an <code>.input-group</code> using the classes <code>.input-group-lg</code> or <code>.input-group-sm</code>.</p>
+  <h4>Example:</h4>
+  <form class="form-horizontal">
+    <div class="input-group input-group-sm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" class="form-control" id="fname">
+      </div>
+      <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" class="form-control" id="lname">
+      </div>
+    </div>
+    </form>
+    <h2>Column Sizing</h2>
+    <p>Size input element widths using different <code>.col-xs-*</code> classes.</p>
+    <h4>Example:</h4>
+    <form>
+      <div class="form-group row">
+        <div class="col-xs-2">
+          <label for="ex1">col-xs-2</label>
+          <input type="text" class="form-control" id="ex1">
+        </div>
+        <div class="col-xs-3">
+          <label for="ex2">col-xs-3</label>
+          <input type="text" class="form-control" id="ex2">
+        </div>
+        <div class="col-xs-4">
+          <label for="ex3">col-xs-4</label>
+          <input type="text" class="form-control" id="ex3">
+        </div>
+      </div>    
+  </form>
+  <h2>Help Text</h2>
+  <p>Use the <code>.help-block</code> class to add block level help text to forms.</p>
+  <h4>Example:</h4>
+  <form>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      <span class="help-block">Help Text Help Text Help Text</span>
+    </div>
+  </form>
+</div>
+</body>
+</html>
