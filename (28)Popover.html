@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Popover Plugin</h1>
+    <h2>The Bootstrap Popover Plugin</h2>
+    <p>This is similar to tooltips.</p>
+    <p>It is a pop-up box that appears when a user clicks on an element.</p>
+    <p>The main difference from tooltips is that a popover can contain much more content.</p>
+    <h2>Create a Popover</h2>
+    <p>Add the
+      <code>data-toggle="popover" attribute to an element.</code>
+    </p>
+    <p>Use the
+      <code>title</code> attribute to specify the header text of the popover.</p>
+    <p>Use the
+      <code>data-content</code> attribute to specify the text that will display inside the body of the popover.</p>
+    <h4>Example:</h4>
+    <div class="well">
+      <p>
+        <code>&lt;a href="#" data-toggle="popover" title="Popover Header Text" data-content="Some content...inside the popover."&gt;Toggle Popover&lt;/a&gt;
+      </code>
+      </p>
+    </div>
+    <p>
+      <mark>
+        <strong>Note:</strong>
+      </mark> Popovers are initialized using jQuery: select the specified element and call the
+      <code>popover()</code> method.</p>
+    <div class="well">
+      <h4>Example</h4>
+      <p>This is some code that will enable all popovers in a document.</p>
+      <p>
+        <code>&lt;script&gt;<br>$(document)ready(funtion(){<br>$('[data-toggle="popover"]').popover();<br>});<br>&lt;/script&gt;</code>
+      </p>
+    </div>
+    <h4>Example:</h4>
+    <a href="#" data-toggle="popover" title="PopOverTitle" data-content="Welcome to the popover here is some information....">Popover Toggle</a>
+    <h2>Positioning Popovers</h2>
+    <p>Default popover style positions the popover on the right side of an element.</p>
+    <p>Use the
+      <code>data-placement</code> attribute to set the position of the popover.</p>
+    <p>This can be on top, bottom, left, or right of the element.</p>
+
+    <div class="container2">
+      <a href="#" title="Header-Top" data-toggle="popover" data-placement="top" data-content="Up top y'all!">Click</a>
+      <a href="#" title="Header-Bottom" data-toggle="popover" data-placement="bottom" data-content="Get down with your bad self.">Click</a>
+      <a href="#" title="Header-Left" data-toggle="popover" data-placement="left" data-content="L is for left, left is for Lucy.">Click</a>
+      <a href="#" title="Header-Right" data-toggle="popover" data-placement="right" data-content="R is for right, righty is for tighty.">Click</a>
+      <div class="well well-sm">
+        <p>
+          <mark>
+            <strong>Tip:</strong>
+            <code>"auto"</code> is another data-placement attribute. This lets the browser decide the position of the popover. If the value
+            is something like "auto left"m this will display on the left if possible, otherwise it will display on the right.</mark>
+        </p>
+      </div>
+    </div>
+    <h2>Closing Popovers</h2>
+    <p>The default action for closing a popover is by clicking again on the trigger. It is also possible to use the
+      <code>data-trigger="focus"</code> attribute to close the popover whenever an area outside the element is clicked.</p>
+    <h5>example:</h5>
+    <code>&lt;a href="#" title="Dismissible popover" data-toggle="popover" <br>data-trigger="focus" data-content="Click anywhere in the document to close this popover"&gt;Click Me&lt;/a&gt;</code>
+    <div class="container3">
+      <a href="#" title="Header" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="click outside box to close">TriggerSwitch</a>
+      <p>
+        <strong>Tip: You can also display the popover using a
+          <code>hover</code> event by giving the
+          <code>data-trigger</code> attribute the value of
+          <mark>hover</mark>.</strong>
+      </p>
+      <a href="#" title="Hover" data-toggle="popover" data-trigger="hover" data-content="Hover boards hover in Hooverville">Hover On This</a>
+      <br>
+      <br>
+      <a href="#" title="Hover" data-toggle="popover" data-trigger="hover" data-content="https://www.w3schools.com/bootstrap/bootstrap_ref_js_popover.asp">Hover for a URL to the complete Bootstrap Popover Reference.</a>
+    </div>
+  </div>
+
+  <script>$(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+</body>
+
+</html>

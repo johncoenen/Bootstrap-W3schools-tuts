@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .spy {
+ width:100%;
+ height:255px;
+}
+@media screen and (max-width: 821px) {
+    .spy {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .spy {
+        height: 500px;
+    }
+}
+
+</style>
+  
+</head>
+
+  <div class="container">
+    <h1>Scrollspy Plugin</h1>
+    <h2>The Scrollspy Plugin</h2>
+    <p>This is used to auto update nav links based on scroll position.</p>
+    <h2>Create a Scrollspy</h2>
+    <p>Add <code>data-spy="scroll"</code> to the element that should be used as the scrollable area. This is often used on the &lt;body&gt; element.</p>
+    <p>Then add the <code>data-target</code> attribute using the value of the id/class name of the <code>.navbar</code>. This creates a connection with the navbar and the scrollable area.</p>
+    <p>Scrollspy elements must match the <mark>ID</mark> of the links inside the navbar list items. EX. <code>&lt;div id="section1"&gt;</code> matches <code>&lt;a href="#section1"&gt;</code></p>
+    <p>The <code>data-offset</code> attribute specifies the number of pixels to offset from top when calculating the position of scroll(THIS IS OPTIONAL).</p>
+    <p>The default is 10px. Use the <code>data-offset</code> method if the navbar active state is occuring too quickly.</p>
+    <p><mark><strong>Requires relative positioning:</strong> The element with <code>data-spy="scroll"</code> requires the CSS <strong>position</strong> property</mark> with a value set to <code>relative</code> to work correctly.</p>    
+    <h4>Scrollspy Example:</h4>
+    <iframe class="spy" src="spyExample1.html" scrolling="yes" >      
+     
+    </iframe>
+    <h2>Scrollspy Vertical Menu</h2>
+    <p>This example uses navigation pills for the menu:</p>
+    <h4>Example</h4>
+    <iframe class="spy" src="spyExample2.html" scrolling="yes" >      
+     
+      </iframe>
+  </div>
+  
+</body>
+</html>
