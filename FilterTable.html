@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .container {
+      width: 90%;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h4>Filter Table Example:</h4>
+      <input type="text" class="form-control" id="myInput" placeholder="Search..."><br>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>Juan</td>
+            <td>Joe</td>
+            <td>juanjoe@plop.com</td>
+          </tr>
+          <tr>
+              <td>Frank</td>
+              <td>Castle</td>
+              <td>punisher@warzone.com</td>
+          </tr>
+          <tr>
+              <td>Jim</td>
+              <td>Varney</td>
+              <td>ernest@goesto.com</td>
+          </tr>
+          <tr>
+              <td>Peggy</td>
+              <td>Day</td>
+              <td>stealheart@bdillon.com</td>
+          </tr>          
+        </tbody>
+      </table>
+      <h5><mark>NOTE:</mark><strong>Search in <code>tbody</code> to prevent filtering the table headers.</strong></h5>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function(){
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+</body>
+</html>

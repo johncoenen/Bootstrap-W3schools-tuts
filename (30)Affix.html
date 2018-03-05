@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Affix Plugin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .container {
+    width: 100%;
+  }
+  iframe {
+    width: 80%;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Affix Plugin</h1>
+    <p>This plugin allows an element to become affixed to an area on a page.</p>
+    <p>Often seen in navigation menus. Otherwise known as "sticky".</p>
+    <p>The plugin toggles the stickiness on/off based on the scroll position. When toggled the <code>CSS position</code> value changes from <code>static</code> to <code>fixed</code>.</p>
+    <h2>Create Sticky Horizontal Nav Menu</h2>
+    <div class="well">
+      <code>&lt;nav class="navbar navbar-inverse" data-spy=<mark>"affix"</mark> data-offset-top="197"&gt;</code>
+    </div>
+    <h4>Click the link to see the Sticky Horizontal Nav Menu in action:</h4>
+    <a href="StickyHorzNav.html">HEY NOW STICKY HORIZONTAL NAV LINK HEY NOW</a>
+    <h2>Create Sticky Vertical Nav Menu</h2>
+    <div class="well">
+        <code>&lt;nav class="navbar nav-pills nav-stacked" data-spy=<mark>"affix"</mark> data-offset-top="205"&gt;</code>
+    </div>
+    <h4>Click the link to see the Sticky Vertical Side Nav Menu in action:</h4>
+    <a href="StickyVertNav">HEY NOW STICKY VERTICAL SIDEBAR NAV MENU HEY NOW</a>
+    <h2>Details</h2>
+    <p>Add <code>data-spy="affix"</code> to the element that will become sticky.</p>
+    <p>Optionally, add <code>data-offset-top|bottom</code> to calculate the position of the scroll.</p>
+    <h3>The Affix Plugin at Work</h3>
+    <p>Toggles between three classes: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code></p>
+    <p>Each class represents a particular state. CSS properties are used to handle the actual positions. <mark>NOTE:</mark><strong>There is an exception when using <code>position:fixed</code> on the <code>.affix</code> class. No CSS is needed in this case:</strong></p>
+    <ul>
+      <li>The plugin adds <code>.affix-top</code> or <code>affix-bottom</code> classes to indicate the element is in its top-most or bottom-most position. No CSS positioning is needed.</li>
+      <li>Scrolling past the affixed element triggers the actual affixing. The plugin replaces <code>.affix-top</code> or <code>.affix-bottom</code> classes to the <code>.affix</code> class and sets <code>position: fixed</code>. In this scenario CSS <code>top</code> or <code>bottom</code> properties are used to position the affixed element on the page.</li>
+      <li>When the bottom offset is defined: scrolling past replaces the <code>.affix</code> class using the <code>.affix-bottom</code> class. Because offsets are optional, setting one will require the use of CSS to position the element. In this case, add <code>position:absolute</code> when necessary.</li>
+    </ul>
+    <p>In the Sticky Horizontal Nav example, the <code>.affix</code> class is added(<code>position:fixed</code>) to the &lt;nav&gt; element when the user scrolls to 197px from the top of the page. In this example the CSS property <code>top</code> is added with a value of zero on the <code>.affix</code> class. This ensures that the navbar stays at the top of the page when the user scrolls 197px from the top of the page.</p>
+    <h2>Scollspy &amp; Affix</h2>
+    <p>How to implement the Affix plugin with the Scrollspy plugin:</p>
+    
+    <div class="well">
+      <h3>Horizontal Navbar</h3>
+      <div class="well" style="background-color: white;">
+        <code>
+            &lt;body data-spy="scroll" data-target=".navbar" data-offset="50"&gt;<br>
+
+                &lt;nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197"&gt;<br>
+                ...<br>
+                &lt;/nav&gt;<br>
+                <br>
+                &lt;/body&gt;
+        </code>
+      </div>
+    </div>
+
+    <div class="well">
+        <h3>Vertical Side Navbar</h3>
+        <div class="well" style="background-color: white;">
+          <code>
+              &lt;body data-spy="scroll" data-target="#myScrollspy" data-offset="15"&gt;<br>
+  
+                  &lt;nav class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200"&gt;<br>
+                  ...<br>
+                  &lt;/nav&gt;<br>
+                  <br>
+                  &lt;/body&gt;
+          </code>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>

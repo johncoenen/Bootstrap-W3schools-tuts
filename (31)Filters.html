@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Filters</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Bootstrap Filters*</h1>
+    <p>There is no component that allows filtering in Bootstrap. jQuery is used instead to filter elements.</p>
+    <h2>Filter Tables</h2>
+    <p>Case-insensitive search for items in a table:</p>
+    <p>
+      <strong>Filtering with jQuery:</strong><br>
+      Use jQuery to loop through each table row and check if any text value matches the value of the search input. The <code>toggle</code> method hides the row <code>display:none</code> that does not match the search. The <code>toLowerCase()</code> method converts text to lower case and allows for case insensitive searching. In other words; john, John, and JOHN will return all cases of the name.
+    </p>
+    <iframe src="FilterTable.html" frameborder="0" style="width: 800px; height: 400px;">
+      
+    </iframe>
+  </div>
+</body>
+</html>
